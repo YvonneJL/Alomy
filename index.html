@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alomy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            letterSpacing: {
+              // "more-space": "1.4rem",
+              // "p-space": "1rem",
+            },
+            extend: {
+              colors: {
+                "font-color-brown": "#E8BF96",
+                "background-color": "#3C3636",
+                "my-white": "#FFFFFF",
+                "my-grey": "#999999",
+                "grey-border": "#3F3A36"
+              },
+              fontSize: {
+                "meine-größe": "7rem",
+              },
+              // lineHeight: {
+              //   "extra-loose": "184.21%",
+              //   "p-height": "165%",
+              },
+              // margin: {
+              //   leftRight: "1.2em",
+              // },
+              margin: {
+                "universal-m": "0 10% 5% 10%",
+                "margin-small-headline": "3%",
+                "margin-big-headline": "6%",
+              },
+            },
+          };
+      </script>
+      <style type="text/tailwindcss">
+        @layer base {
+            @font-face {
+                font-family: NewYork;
+                src: url('./assets/font/NewYork\ PERSONAL\ USE.otf');
+            }
+            /* @font-face {
+                font-family: Euclid_Circular;
+                src: url('./assets/font/Euclid\ Circular\ A\ Regular.ttf');
+            } */
+            html {
+                @apply bg-background-color;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                @apply text-my-white font-[NewYork] leading-none;
+            }
+            h1 {
+                @apply text-[13rem] text-center mb-margin-small-headline;
+            }
+            h2 {
+                @apply text-9xl;
+            }
+            h3 {
+                @apply text-8xl text-center mb-margin-small-headline px-[10%];
+            }
+            h4 {
+                @apply text-6xl;
+            }
+            h5 {
+                @apply text-4xl mb-margin-big-headline;
+            }
+            h6 {
+                @apply text-2xl;
+            }
+            p {
+                @apply leading-loose text-my-grey;
+            }
+            a {
+                @apply text-my-white text-sm hover:text-font-color-brown;
+            }
+            button {
+                @apply text-my-white border-[0.1rem] rounded-full py-[2%] w-[14%] border-grey-border;
+            }
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav class="flex justify-between p-[2%] py-[1%] mb-[2%] items-center border-b-4 border-grey-border fixed right-0 left-0 z-10 bg-background-color">
+            <img src="./assets/img/alomy.png" alt="alomy-icon">
+            <div class="flex justify-between w-[40%]">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">WORK</a>
+                <a href="">SERVICE</a>
+                <a href="">BLOG</a>
+                <a href="">AWARD</a>
+                <a href="">CONTACT</a>
+            </div>
+        </nav>
+        <section class="m-universal-m relative">
+            <article class="absolute top-[15%] right-[-9%] w-[30%] z[-1]">
+                <img class="mb-[60%] w-[70%]" src="./assets/img/24.jpeg" alt="portrait woman">
+                <p class="ml-[10%] w-1/2 text-my-grey text-[1rem]">Working as a <span class="text-my-white">creative and outsource</span> your fashion design project and get it quickly done amnd delivered remotely online</p>
+            </article>
+
+            <article class="flex flex-col items-center relative pt-[10%]">
+                <img src="./assets/img/playbutton.svg" alt="playbutton">
+                <h1>Unrivaled Shally</h1>
+                <h5 class="w-[30%] text-center">A Creative <span class="text-font-color-brown">Fashion</span> Designer</h5>
+                <div class="relative">
+                    <img src="./assets/img/17.jpeg" alt="portrait woman">
+                    <img class="absolute top-[-10%] left-[-15%]" src="./assets/img/sparkle2.png" alt="sparkle">
+                </div>
+            </article>
+
+            <article class="absolute top-[25%] z-[-1]">
+                <img class="pb-[30%] w-[80%]" src="./assets/img/22.jpeg" alt="portrait woman">
+                <div class="flex items-center gap-[10%]">
+                    <img src="./assets/img/sparkle.png" alt="stars">
+                    <div class="flex flex-col">
+                        <img class="w-[25%]" src="./assets/img/arrow.png" alt="arrow pointing up right">
+                        <p class="text-my-white">Fashion</p>
+                        <p class="text-my-white">Week - 2020</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </header>
+    <main>
+        <section class="flex flex-col m-universal-m items-center">
+            <div class="w-[100%] h-[2px] bg-grey-border mb-[5%]"></div>
+            <h3>Fashion for passion & life style</h3>
+            <p class="text-my-grey text-center mb-margin-big-headline px-[30%]">We formulate intentionally crafted supplements for thoughtful people like you – using only the highest quality ingredients at effective doses. Empowering you to take control of your wellness, look and feel great, and live a life brimming with energy.</p>
+            <button>Check my Works</button>
+            <div class="w-[100%] h-[2px] bg-grey-border mt-[5%]"></div>
+        </section>
+
+        <section class="m-universal-m relative h-[300vh]">
+            <article class="relative mb-[10%]">
+                <h3 class="text-left px-0 w-1/2">Selected works</h3>
+                <div class="flex gap-[5%]">
+                    <div class="w-[18%] h-[1px] bg-my-grey mt-[2%] ml-[10%]"></div>
+                    <p class="text-my-grey w-[40%]">Creative work of natural source from, We select only those modern works also my planet your products.</p>
+                </div>
+                <button class="absolute right-0 top-[90%]">View all Works</button>
+            </article>
+
+            <article class="mb-[15%]">
+                <div class="w-[600px] h-[700px] overflow-clip absolute z-[-1] group">
+                    <img class="h-[100%] w-[100%] object-cover" src="./assets/img/1.jpeg" alt="woman portrait">
+                    <div class="absolute mr-[20%] ml-[10%] mt-[10%] top-0 opacity-1 group-hover:opacity-[1]">
+                        <img class="w-[5%]" src="./assets/img/arrow.png" alt="arrow pointing up right">
+                        <p class="text-my-white">DEVELOPMENT</p>
+                        <h4>Stefanie Brückler</h4>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[400px] overflow-clip absolute right-0 top-[30%] z-[-1] group">
+                    <img class="h-[100%] w-[100%] object-cover" src="./assets/img/2.jpeg" alt="woman portrait">
+                    <div class="absolute mr-[20%] ml-[10%] mt-[10%] top-0 opacity-1 group-hover:opacity-[1]">
+                        <img src="./assets/img/arrow.png" alt="arrow pointing up right">
+                        <p class="text-my-white">CREATIVE</p>
+                        <h4>Shelby Hypol</h4>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="group w-[600px] h-[700px] overflow-clip absolute right-0 top-[60%] z-[-1]">
+                    <img class="h-[100%] w-[100%] object-cover" src="./assets/img/5.jpeg" alt="woman portrait">
+                    <div class="absolute mr-[20%] ml-[10%] mt-[10%] top-0 opacity-1 group-hover:opacity-100">
+                        <img class="w-[5%]" src="./assets/img/arrow.png" alt="arrow pointing up right">
+                        <p class="text-my-white">WEB DESIGN</p>
+                        <h4>Visual Identity</h4>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[400px] overflow-clip absolute left-0 top-[70%] z-[-1] group">
+                    <img class="h-[100%] w-[100%] object-cover" src="./assets/img/4.jpeg" alt="woman portrait">
+                    <div class="absolute mr-[20%] ml-[10%] mt-[10%] top-0 opacity-1 group-hover:opacity-[1]">
+                        <img src="./assets/img/arrow.png" alt="arrow pointing up right">
+                        <p class="text-my-white">BRANDING</p>
+                        <h4>Etienne Godiard</h4>
+                    </div>
+                </div>
+            </article>
+        </section> 
+        
+        <section class="relative m-universal-m">
+            <article>
+                <div class="flex items-center justify-between">
+                    <a href="">Service</a>
+                    <p class="text-my-grey">My Expertise In This Area</p>
+                    <a href="">Let's talk</a>
+                </div>
+                <div class="w-[100%] h-[2px] bg-grey-border mb-[5%] mt-[1%]"></div>
+            </article>
+            <article class="flex flex-col items-center">
+            <div class="flex flex-col items-center">
+                <h3 class="mb-[0] hover:text-font-color-brown">Costume</h3>
+            <p class="text-my-grey mb-[3%]">Cloth & Wearing</p>
+            </div>
+            <div class="group flex flex-col items-center">
+                <h3 class="mb-[0] group-hover:text-font-color-brown">Acting</h3>
+                <img class="hidden group-hover:block absolute left-0 top-[55%] z-[1] object-cover w-[250px]" src="./assets/img/20.jpeg" alt="portrait woman"> 
+                <img class="hidden group-hover:block w-[15%] absolute right-0 top-[15%] z-[1] object-cover" src="./assets/img/13.jpeg" alt="portrait woman">
+                <p class="text-my-grey mb-[3%]">Character</p>
+            </div>
+            <div class="group flex flex-col items-center">
+                <h3 class="mb-[0] group-hover:text-font-color-brown">Modelling</h3>
+                <img class="hidden group-hover:block absolute left-0 top-[55%] z-[1] object-cover w-[250px]" src="./assets/img/15.jpeg" alt="portrait woman"> 
+                <img class="hidden group-hover:block w-[15%] absolute right-0 top-[15%] z-[1] object-cover" src="./assets/img/22.jpeg" alt="portrait woman">
+                <p class="text-my-grey mb-[3%]">Fashion & Lifestyle</p>
+            </div>
+            
+            <div class="group flex flex-col items-center">
+                <h3 class="mb-[0] group-hover:text-font-color-brown">Artist</h3>
+                <img class="hidden group-hover:block absolute left-0 top-[55%] z-[1] object-cover w-[250px]" src="./assets/img/21.jpeg" alt="portrait woman"> 
+                <img class="hidden group-hover:block w-[15%] absolute right-0 top-[15%] z-[1] object-cover h-[240px]" src="./assets/img/20.jpeg" alt="portrait woman">
+                <p class="text-my-grey mb-[3%]">Creative Designer</p>
+            </div>
+            </article>
+            <div>
+                <img class="absolute left-0 top-[55%]" src="./assets/img/17.jpeg" alt="Portrait woman">
+            </div>
+            <div>
+                <img class="w-[15%] absolute right-0 top-[15%]" src="./assets/img/16.jpeg" alt="portrait woman">
+            </div>
+        </section>
+
+        <section class="m-universal-m mt-[10%]">
+            <div class="w-[100%] h-[2px] bg-grey-border mb-[5%] mt-[1%]"></div>
+            <article class="relative mb-[10%]">
+                <h3 class="text-left px-0 w-1/2">My Blogs</h3>
+                <div class="flex gap-[5%]">
+                    <div class="w-[18%] h-[1px] bg-my-grey mt-[2%] ml-[10%]"></div>
+                    <p class="text-my-grey w-[40%]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
+                </div>
+                <button class="absolute right-0 top-[70%]">View all Works</button>
+            </article>
+            <article class="flex flex-row gap-[5%]">
+                <div>
+                    <img src="./assets/img/1.png" alt="woman on laptop">
+                    <p class="pt-[5%] pb-[3%]">Marketing, Oct 24, 2022</p>
+                    <h6>Why Successful People Wear The Same Thing Every Day.</h6>
+                </div>
+                <div>
+                    <img class="w-[97%]" src="./assets/img/2.png" alt="woman on laptop">
+                    <p class="pt-[5%] pb-[3%]">UI Design, Oct 24, 2022</p>
+                    <h6>The Quickest Way to Deliver Your Message? Make It Visual.</h6>
+                </div>
+                <div>
+                    <img class="w-[93%]" src="./assets/img/3.png" alt="woman on laptop">
+                    <p class="pt-[5%] pb-[3%]">Marketing, Oct 24, 2022</p>
+                    <h6>The Easiest Way to Become a Successful Writer and Authors.</h6>
+                </div>
+            </article>
+        </section>
+        <section class=" m-universal-m bg-[url('./assets/img/lol.jpeg')] h-[90vh] bg-no-repeat object-cover ">
+          <article class="flex flex-col justify-end items-end gap-[5%] h-[90vh] pb-[5%]">
+            <div class="w-[50%] h-[1px] bg-my-white mt-[2%] mr-[5%]"></div>
+            <div class="flex items-center gap-[5%] w-[50%]">
+                <h4>DIVINE BEAUTY</h4>
+                <p class="text-my-white">Design is the art of applying design, aesthetics, clothing and natural beauty to clothing with its accessories.</p>
+            </div>
+          </article>
+        </section>
+        <section class="m-universal-m">
+            <h4 class="w-[60%] mb-[5%]">Nominated as fashion designer of the year worldwide.</h4>
+            <article class="flex justify-between">
+                <p class="w-1/2 pl-[15%]">I’m passionate about doing the best digital innovation we can and pushing nontechnology to its limits. And I achieve results we're proud of. We work with purpose-driven companies to take brave ideas to market.</p>
+                <div class="pr-[5%]">
+                    <img class="pb-[8%]" src="./assets/img/award.png" alt="award">
+                    <p class="text-lg text-my-white">01x DeveloperAward</p>
+                    <p>Winner</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
